@@ -17,13 +17,27 @@ Requirements
 - Spigot / PaperMC server (tested conceptually against 1.16.x; BlockData API used works on 1.13+).
 
 Build
-1. From this repository root, build the plugin with Maven (PowerShell):
+1. From this repository root, build the plugin with Maven. If you have Maven installed system-wide, run (PowerShell):
 
 ```powershell
 mvn package
 ```
 
-2. After a successful build, the plugin JAR will be in `target/` (for example `target/BabelLibrary-1.0-SNAPSHOT.jar`).
+2. No Maven installed? Use the included lightweight wrapper scripts. On Windows run:
+
+```powershell
+.\mvnw.cmd package
+```
+
+On macOS/Linux (or WSL):
+
+```bash
+./mvnw package
+```
+
+The wrapper downloads a small Apache Maven binary into `.mvn/wrapper/` on first run and invokes it.
+
+3. After a successful build, the plugin JAR will be in `target/` (for example `target/BabelLibrary-1.0-SNAPSHOT.jar`).
 
 Install
 1. Copy the JAR into your server's `plugins/` directory.

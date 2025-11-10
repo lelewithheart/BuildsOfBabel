@@ -23,6 +23,32 @@
         </dependency>
     </dependencies>
 
+    <!-- Repositories needed to resolve Spigot/Paper APIs (not hosted on Maven Central) -->
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <name>Spigot Snapshot Repository</name>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>papermc</id>
+            <name>PaperMC Maven</name>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>

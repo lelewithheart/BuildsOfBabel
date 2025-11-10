@@ -1,0 +1,10 @@
+name: BabelLibrary
+main: com.babellibrary.BabelLibraryPlugin
+version: 1.0
+api-version: 1.16
+commands:
+  library:
+    description: Visit or locate library coordinates
+    usage: /library <visit|locate>
+    permission: babellibrary.use
+    permission-message: You cannot use this command.

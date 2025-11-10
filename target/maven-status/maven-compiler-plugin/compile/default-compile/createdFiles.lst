@@ -1,0 +1,4 @@
+com\babellibrary\BabelLibraryPlugin.class
+com\babellibrary\CoordinateCodec.class
+com\babellibrary\LibraryCommands.class
+com\babellibrary\BuildGenerator.class
